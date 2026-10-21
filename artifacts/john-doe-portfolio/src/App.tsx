@@ -5,6 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
 import { ArrowDown, ArrowUpRight, Check, Copy } from 'lucide-react';
+import heroPortrait from './assets/hero-portrait.webp';
 import {
   Route,
   Switch,
@@ -73,7 +74,7 @@ function Home() {
         <section className="mx-auto flex max-w-[1240px] flex-col items-start gap-10 px-5 pb-20 pt-32 sm:px-8 md:flex-row md:items-center md:gap-20 md:pb-28 md:pt-44">
           <div className="reveal-up relative mx-auto aspect-square w-[min(68vw,340px)] shrink-0 md:ml-7 md:mr-0 md:w-[350px]">
             <div className="h-full w-full rotate-[-6deg] overflow-hidden bg-[#dedbd1] shadow-[0_24px_60px_rgba(37,36,32,.17)] transition-transform duration-700 hover:rotate-0">
-              <img src="https://framerusercontent.com/images/JQqsD7xecQfWDLwoSTpvjAMyVw.png?scale-down-to=512" alt="John Doe, senior product designer" className="h-full w-full object-cover" />
+              <img src={heroPortrait} alt="John Doe, senior product designer" className="h-full w-full object-cover object-[center_25%]" />
             </div>
             <span className="absolute -bottom-5 -right-6 flex h-[82px] w-[82px] rotate-[8deg] items-center justify-center rounded-full border border-[#191919]/15 bg-[#f7f5ef] text-center font-mono text-[9px] uppercase leading-[1.45] tracking-[.08em] text-[#65645e]">Available<br />for select<br />projects</span>
           </div>
