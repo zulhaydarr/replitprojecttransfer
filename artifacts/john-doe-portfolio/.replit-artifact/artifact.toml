@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "John Doe — Product Designer"
+description = "A personal portfolio for senior product designer John Doe, showcasing selected work, experience, and contact information in a polished editorial format."
+version = "1.0.0"
+id = "artifacts/john-doe-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25527
+
+[services.development]
+run = "pnpm --filter @workspace/john-doe-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/john-doe-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/john-doe-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25527"
+BASE_PATH = "/"
