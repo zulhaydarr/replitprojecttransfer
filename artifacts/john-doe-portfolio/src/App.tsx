@@ -91,9 +91,14 @@ function Home() {
 
         <div className="reveal-up reveal-delay-2 mx-auto mb-24 max-w-[1320px] px-3 sm:px-6 md:mb-32">
           <div className="relative aspect-[16/10] overflow-hidden bg-[#e9e6de] sm:aspect-[16/8.5] md:h-[min(66vw,780px)] md:aspect-auto">
-            <video autoPlay loop muted playsInline poster="https://framerusercontent.com/images/YDjVNDAOvD5YmVUUL9xUCPgIbSw.png" className="h-full w-full object-cover" aria-label="A moving visual study of product design">
-              <source src="https://framerusercontent.com/assets/qrR62CWXqDhpxD9VshrTGooXZg.mp4" type="video/mp4" />
-            </video>
+            <iframe
+              src="https://www.youtube.com/embed/9p0lDGh9JXA?si=UlEXIDn4FlcTikpy"
+              title="YouTube video player"
+              className="h-full w-full border-0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
             <div className="absolute bottom-4 left-4 flex items-center gap-2 bg-[#f7f5ef]/90 px-3 py-2 font-mono text-[9px] uppercase tracking-[.12em] text-[#5d5b55] backdrop-blur sm:bottom-7 sm:left-7 sm:text-[10px]"><span className="h-1.5 w-1.5 rounded-full bg-[#275bd7]" /> A little of what I do</div>
           </div>
         </div>
