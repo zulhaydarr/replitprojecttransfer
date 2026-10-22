@@ -74,18 +74,21 @@ function Home() {
         <section className="mx-auto flex max-w-[1240px] flex-col items-start gap-10 px-5 pb-20 pt-32 sm:px-8 md:flex-row md:items-center md:gap-20 md:pb-28 md:pt-44">
           <div className="reveal-up relative mx-auto aspect-square w-[min(68vw,340px)] shrink-0 md:ml-7 md:mr-0 md:w-[350px]">
             <div className="h-full w-full rotate-[-6deg] overflow-hidden bg-[#dedbd1] shadow-[0_24px_60px_rgba(37,36,32,.17)] transition-transform duration-700 hover:rotate-0">
-              <img src={heroPortrait} alt="John Doe, senior product designer" className="h-full w-full object-cover object-[center_25%]" />
+              <img src={heroPortrait} alt="Portrait of Zulhaydar Fathurrahman Sidiq" className="h-full w-full object-cover object-[center_25%]" />
             </div>
             <span className="absolute -bottom-5 -right-6 flex h-[82px] w-[82px] rotate-[8deg] items-center justify-center rounded-full border border-[#191919]/15 bg-[#f7f5ef] text-center font-mono text-[9px] uppercase leading-[1.45] tracking-[.08em] text-[#65645e]">Available<br />for select<br />projects</span>
           </div>
           <div className="reveal-up reveal-delay-1 flex max-w-[700px] flex-col gap-7">
-            <p className="font-mono text-[11px] uppercase tracking-[.16em] text-[#275bd7]">Independent designer · Brooklyn, NY</p>
-            <h1 className="max-w-[760px] text-[clamp(3.2rem,8vw,6.8rem)] font-medium leading-[.91] tracking-[-.075em]">Senior product<br className="hidden sm:block" /> designer<span className="text-[#275bd7]">.</span></h1>
+            <p className="font-mono text-[11px] uppercase tracking-[.16em] text-[#275bd7]">End-to-end multimedia production · concept to final cut</p>
+            <h1 className="max-w-[760px] text-[clamp(2.8rem,6.4vw,5.6rem)] font-medium leading-[.96] tracking-[-.075em]">Hi! I’m Zulhaydar Fathurrahman Sidiq<span className="text-[#275bd7]">.</span></h1>
             <div className="space-y-3 text-[18px] font-semibold leading-[1.55] tracking-[-.035em] sm:text-[21px] md:text-[23px]">
-              <p>I turn complex problems into products that feel <a href="#work" className="font-serif italic font-medium text-[#275bd7] underline decoration-[#275bd7]/35 underline-offset-[5px] transition-colors hover:decoration-[#275bd7]">clear, useful, and human.</a></p>
-              <p className="text-[15px] font-medium leading-relaxed tracking-[-.02em] text-[#77756f] sm:text-[17px]">Currently shaping the next chapter of retail at Crosby. Usually found sketching a new idea or looking for a very good espresso.</p>
+              <p>Bridging the gap between a great idea and a stunning final cut.</p>
+              <p className="text-[15px] font-medium leading-relaxed tracking-[-.02em] text-[#77756f] sm:text-[17px]">Specializing in end-to-end multimedia production. I manage everything from pre-production planning to on-set execution and post-production editing, ensuring every piece of content hits the right audience.</p>
             </div>
-            <a href="#work" className="mt-1 inline-flex w-fit items-center gap-2 border-b border-[#191919]/30 pb-1.5 text-[13px] font-bold transition-colors hover:border-[#275bd7] hover:text-[#275bd7]" data-testid="link-explore-work">Explore selected work <ArrowDown size={14} /></a>
+            <div className="mt-1 flex flex-wrap items-center gap-3">
+              <a href="#contact" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#275bd7] px-6 py-3 text-[13px] font-bold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#275bd7] focus-visible:ring-offset-2" data-testid="link-contact-me">Contact Me <ArrowUpRight size={15} aria-hidden="true" /></a>
+              <a href="#work" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-[#191919]/20 px-6 py-3 text-[13px] font-bold transition-colors hover:border-[#275bd7] hover:text-[#275bd7] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#275bd7] focus-visible:ring-offset-2" data-testid="link-view-work">View my work <ArrowDown size={14} aria-hidden="true" /></a>
+            </div>
           </div>
         </section>
 
@@ -201,7 +204,7 @@ function Home() {
           </div>
         </div>
       </footer>
-      <a href={`mailto:${email}?subject=${encodeURIComponent('Let’s work together')}`} className="fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 rounded-full bg-[#275bd7] px-5 py-3.5 text-[12px] font-bold text-white shadow-[0_8px_25px_rgba(39,91,215,.22)] transition-transform hover:-translate-y-1 sm:bottom-8 sm:right-8" data-testid="link-contact-cta">Let’s talk <ArrowUpRight size={14} /></a>
+      <a href={`mailto:${email}?subject=${encodeURIComponent('Let’s work together')}`} className="fixed bottom-5 right-5 z-40 hidden items-center gap-2 rounded-full bg-[#275bd7] px-5 py-3.5 text-[12px] font-bold text-white shadow-[0_8px_25px_rgba(39,91,215,.22)] transition-transform hover:-translate-y-1 sm:inline-flex sm:bottom-8 sm:right-8" data-testid="link-contact-cta">Let’s talk <ArrowUpRight size={14} /></a>
       {copied && <div role="status" aria-live="polite" className="copy-toast fixed bottom-[78px] left-1/2 z-[60] -translate-x-1/2 border border-[#191919]/10 bg-[#191919] px-4 py-3 text-[12px] font-semibold text-white shadow-lg sm:bottom-8 sm:left-8 sm:translate-x-0">Email address copied to clipboard</div>}
     </div>
   );
