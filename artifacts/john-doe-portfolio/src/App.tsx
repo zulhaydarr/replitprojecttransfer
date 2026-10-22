@@ -58,16 +58,20 @@ function Home() {
   return (
     <div id="top" className="min-h-[100dvh] bg-[#f7f5ef] text-[#191919]">
       <nav aria-label="Main navigation" className="fixed inset-x-0 top-0 z-50 border-b border-[#191919]/[.07] bg-[#f7f5ef]/90 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-[1240px] items-center justify-between px-5 py-4 sm:px-8">
+        <div className="relative mx-auto max-w-[1240px] px-5 py-3 sm:px-8 md:flex md:min-h-[72px] md:items-center md:justify-between md:py-0">
+          <div className="flex items-center justify-between md:w-full">
           <a href="#top" className="relative z-10 text-[15px] font-extrabold tracking-[-.06em]" aria-label="John Doe, home" data-testid="link-home">JOHN DOE<span className="ml-1 text-[#275bd7]">.</span></a>
-          <div className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-9 md:flex">
-            <a href="#work" className="text-[13px] font-semibold text-[#64635f] transition-colors hover:text-[#191919]" data-testid="link-work">Work</a>
-            <a href="#about" className="text-[13px] font-semibold text-[#64635f] transition-colors hover:text-[#191919]" data-testid="link-about">About</a>
-          </div>
           <button onClick={copyEmail} className="group flex items-center gap-2 rounded-full bg-[#191919] px-4 py-2.5 text-[12px] font-semibold text-white transition-transform hover:scale-[1.03] active:scale-[.97] sm:px-5 sm:text-[13px]" aria-label={copied ? 'Email address copied' : `Copy ${email}`} data-testid="button-copy-email">
             <span>{copied ? 'Copied to clipboard' : email}</span>
             {copied ? <Check size={14} aria-hidden="true" /> : <Copy size={13} className="text-white/60" aria-hidden="true" />}
           </button>
+          </div>
+          <div className="mt-2 flex items-center justify-center gap-x-5 border-t border-[#191919]/[.07] pt-2 md:absolute md:left-1/2 md:top-1/2 md:mt-0 md:-translate-x-1/2 md:-translate-y-1/2 md:gap-8 md:border-0 md:pt-0">
+            <a href="#work" className="text-[13px] font-semibold text-[#64635f] transition-colors hover:text-[#191919]" data-testid="link-work">Work</a>
+            <a href="#about" className="text-[13px] font-semibold text-[#64635f] transition-colors hover:text-[#191919]" data-testid="link-about">About</a>
+            <a href="#experience" className="text-[13px] font-semibold text-[#64635f] transition-colors hover:text-[#191919]" data-testid="link-experience">Experience</a>
+            <a href="#contact" className="text-[13px] font-semibold text-[#64635f] transition-colors hover:text-[#191919]" data-testid="link-contact">Contact</a>
+          </div>
         </div>
       </nav>
       <main className="w-full overflow-hidden">
@@ -168,8 +172,8 @@ function Home() {
             </div>
           </div>
 
-          <div className="reveal-up space-y-12">
-            <p className="font-mono text-[10px] uppercase tracking-[.18em] text-[#77756f]">Where I’ve made a difference</p>
+          <section id="experience" aria-labelledby="experience-heading" className="reveal-up scroll-mt-24 space-y-12">
+            <p id="experience-heading" className="font-mono text-[10px] uppercase tracking-[.18em] text-[#77756f]">Experience</p>
             <div className="border-t border-[#191919]/15">
               <div className="grid gap-4 border-b border-[#191919]/15 py-7 md:grid-cols-[.6fr_1.5fr_1.1fr] md:gap-8 md:py-9">
                 <span className="font-mono text-[11px] text-[#77756f]">2021 — NOW</span><div><h4 className="text-[19px] font-bold tracking-[-.04em]">Crosby <span className="font-normal text-[#77756f]">/ Senior Product Designer</span></h4><span className="mt-1 block text-[12px] text-[#89877f]">Remote · Retail technology</span></div><p className="text-[14px] leading-relaxed text-[#65635d]">Leading product strategy and design for a modern retail platform, across the counter and beyond.</p>
@@ -184,7 +188,7 @@ function Home() {
                 <span className="font-mono text-[11px] text-[#77756f]">2009 — 2012</span><div><h4 className="text-[19px] font-bold tracking-[-.04em]">Independent <span className="font-normal text-[#77756f]">/ Product Designer</span></h4><span className="mt-1 block text-[12px] text-[#89877f]">A little bit of everything</span></div><p className="text-[14px] leading-relaxed text-[#65635d]">Partnered with ambitious teams to make digital products feel intuitive, especially in commerce.</p>
               </div>
             </div>
-          </div>
+          </section>
         </section>
       </main>
       <footer id="contact" className="mt-12 border-t border-[#191919]/15">
