@@ -172,8 +172,8 @@ function Home() {
 
         <section id="about" className="mx-auto max-w-[1240px] scroll-mt-24 px-5 py-24 sm:px-8 md:py-32">
           <div className="reveal-up mb-16 md:mb-24">
-            <p className="mb-5 font-mono text-[10px] uppercase tracking-[.18em] text-[#77756f]">&nbsp;</p>
-            <h2 className="text-[clamp(4rem,10vw,7.3rem)] font-medium leading-[.87] tracking-[-.085em]">About Me</h2>
+            <p className="mb-5 font-mono text-[10px] uppercase tracking-[.18em] text-[#77756f]">ABOUT</p>
+            <h2 className="text-[clamp(2.75rem,7vw,4rem)] font-semibold leading-[.95] tracking-[-.075em]">Zulhaydar Fathurrahman Sidiq</h2>
           </div>
           <div className="reveal-up mb-24 grid gap-10 md:mb-32 md:grid-cols-[.8fr_1.4fr] md:gap-20">
             <h3 className="max-w-[400px] text-[27px] font-semibold leading-[1.18] tracking-[-.055em] sm:text-[32px]">Good design makes the hard things feel obvious.</h3>
