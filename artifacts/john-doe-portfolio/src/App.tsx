@@ -164,8 +164,10 @@ function Home() {
           </div>
           <div className="reveal-up mb-24 grid gap-10 md:mb-32 md:grid-cols-[.8fr_1.4fr] md:gap-20">
             <h3 className="max-w-[400px] text-[27px] font-semibold leading-[1.18] tracking-[-.055em] sm:text-[32px]">Good design makes the hard things feel obvious.</h3>
-            <div className="space-y-5 text-[16px] leading-[1.85] text-[#55534e] sm:text-[18px]">
-              <p>Creative Production Specialist with a storytelling driven approach to media production, Information Technology, and organizational communication. Contributed to digital engagement through Instagram and TikTok content for BBPBAT (@bbpbat.official), generating over 10,000 views. Skilled in creative production, digital content management, graphic design, publication, and video editing using CapCut and Adobe Premiere Pro. Proficient in OBS Studio for live streaming and Canon/Sony mirrorless cameras, with expertise in photography and event documentation. Combines creative storytelling, technical skills, strategic communication, coordination, and administrative capabilities to support creative projects and operational needs. Passionate about turning ideas into engaging visual stories while maintaining quality, consistency, and purpose throughout the creative process.</p>
+            <div className="space-y-5 text-[16px] leading-[1.85] text-[#55534e] sm:space-y-6 sm:text-[18px]">
+              <p>Creative Production Specialist with a storytelling driven approach to media production, Information Technology, and organizational communication. Contributed to digital engagement through Instagram and TikTok content for BBPBAT (@bbpbat.official), generating over 10,000 views.</p>
+              <p>Skilled in creative production, digital content management, graphic design, publication, and video editing using CapCut and Adobe Premiere Pro. Proficient in OBS Studio for live streaming and Canon/Sony mirrorless cameras, with expertise in photography and event documentation.</p>
+              <p>Combines creative storytelling, technical skills, strategic communication, coordination, and administrative capabilities to support creative projects and operational needs. Passionate about turning ideas into engaging visual stories while maintaining quality, consistency, and purpose throughout the creative process.</p>
             </div>
           </div>
 
