@@ -73,8 +73,8 @@ function Home() {
       <nav aria-label="Main navigation" className="fixed inset-x-0 top-0 z-50 border-b border-[#191919]/[.07] bg-[#f7f5ef]/90 backdrop-blur-xl">
         <div className="relative mx-auto max-w-[1240px] px-5 py-3 sm:px-8 md:flex md:min-h-[72px] md:items-center md:justify-between md:py-0">
           <div className="flex items-center justify-between md:w-full">
-          <a href="#top" className="relative z-10 text-[15px] font-extrabold tracking-[-.06em]" aria-label="John Doe, home" data-testid="link-home">JOHN DOE<span className="ml-1 text-[#275bd7]">.</span></a>
-          <button onClick={copyEmail} className="group flex items-center gap-2 rounded-full bg-[#191919] px-4 py-2.5 text-[12px] font-semibold text-white transition-transform hover:scale-[1.03] active:scale-[.97] sm:px-5 sm:text-[13px]" aria-label={copied ? 'Email address copied' : `Copy ${email}`} data-testid="button-copy-email">
+          <a href="#top" className="relative z-10 shrink-0 whitespace-nowrap text-[clamp(10px,2.9vw,15px)] font-extrabold tracking-[-.06em] sm:text-[15px]" aria-label="Zulhaydar Fathurrahman Sidiq, home" data-testid="link-home">Zulhaydar Fathurrahman Sidiq<span className="ml-1 text-[#275bd7]">.</span></a>
+          <button onClick={copyEmail} className="group flex items-center gap-2 rounded-full bg-[#191919] px-4 py-2.5 text-[12px] font-semibold text-white transition-transform hover:scale-[1.03] active:scale-[.97] max-[360px]:px-2 max-[360px]:text-[10px] sm:px-5 sm:text-[13px]" aria-label={copied ? 'Email address copied' : `Copy ${email}`} data-testid="button-copy-email">
             <span>{copied ? 'Copied to clipboard' : email}</span>
             {copied ? <Check size={14} aria-hidden="true" /> : <Copy size={13} className="text-white/60" aria-hidden="true" />}
           </button>
