@@ -194,7 +194,7 @@ function Home() {
                     <h3 className="text-[19px] font-bold leading-snug tracking-[-.045em] sm:text-[21px]">Photo &amp; Video Editor</h3>
                     <p className="mt-1 text-[14px] text-[#77756f]">BBPBAT Sukabumi</p>
                   </div>
-                  <p className="shrink-0 font-mono text-[11px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[12px]">November 2025 – May 2026</p>
+                  <p className="shrink-0 font-mono text-[12px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[13px]">November 2025 – May 2026</p>
                 </div>
                 <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[14px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[15px]">
                   <li>Produced and edited educational content showcasing various cultured freshwater fish species to highlight the institution’s aquaculture programs across social media platforms.</li>
@@ -212,7 +212,7 @@ function Home() {
                     <h3 className="text-[19px] font-bold leading-snug tracking-[-.045em] sm:text-[21px]">AI Assisted Creative Production</h3>
                     <p className="mt-1 text-[14px] text-[#77756f]">PT Presentologics</p>
                   </div>
-                  <p className="shrink-0 font-mono text-[11px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[12px]">December 2024 – April 2025</p>
+                  <p className="shrink-0 font-mono text-[12px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[13px]">December 2024 – April 2025</p>
                 </div>
                 <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[14px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[15px]">
                   <li>Produced and edited video content using AI-powered tools to enhance visual storytelling, streamline editing workflows, and improve overall content quality.</li>
@@ -229,7 +229,7 @@ function Home() {
                     <h3 className="text-[19px] font-bold leading-snug tracking-[-.045em] sm:text-[21px]">UI/UX Design And Development</h3>
                     <p className="mt-1 text-[14px] text-[#77756f]">Learning X</p>
                   </div>
-                  <p className="shrink-0 font-mono text-[11px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[12px]">February 2024 – August 2024</p>
+                  <p className="shrink-0 font-mono text-[12px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[13px]">February 2024 – August 2024</p>
                 </div>
                 <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[14px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[15px]">
                   <li>Created user interface designs and interactive prototypes using Figma to develop intuitive and user-friendly digital experiences.</li>
@@ -249,7 +249,7 @@ function Home() {
                     <h3 className="text-[19px] font-bold leading-snug tracking-[-.045em] sm:text-[21px]">Digital Library Experience Design</h3>
                     <p className="mt-1 text-[14px] text-[#77756f]">PT Global Investment Insititusi</p>
                   </div>
-                  <p className="shrink-0 font-mono text-[11px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[12px]">February 2023 – February 2024</p>
+                  <p className="shrink-0 font-mono text-[12px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[13px]">February 2023 – February 2024</p>
                 </div>
                 <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[14px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[15px]">
                   <li>Developed and enhanced web applications using React.js and Tailwind CSS to present and organize digital content while improving overall workflow efficiency.</li>
