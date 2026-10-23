@@ -161,14 +161,13 @@ function Home() {
         <section id="about" className="mx-auto max-w-[1240px] scroll-mt-24 px-5 py-24 sm:px-8 md:py-32">
           <div className="reveal-up mb-16 md:mb-24">
             <p className="mb-5 font-mono text-[10px] uppercase tracking-[.18em] text-[#77756f]">A little context</p>
-            <h2 className="text-[clamp(4rem,10vw,7.3rem)] font-medium leading-[.87] tracking-[-.085em]">About<span className="text-[#275bd7]">.</span></h2>
+            <h2 className="text-[clamp(4rem,10vw,7.3rem)] font-medium leading-[.87] tracking-[-.085em]">About Me</h2>
           </div>
-          <div className="reveal-up mb-24 grid gap-10 md:mb-32 md:grid-cols-[.8fr_1.4fr] md:gap-20">
-            <h3 className="max-w-[400px] text-[27px] font-semibold leading-[1.18] tracking-[-.055em] sm:text-[32px]">Good design makes the hard things feel obvious.</h3>
+          <div className="reveal-up mb-24 max-w-[900px] md:mb-32">
             <div className="space-y-5 text-[16px] leading-[1.85] text-[#55534e] sm:text-[18px]">
-              <p>I’m John, a product designer and strategic partner with 14 years of experience making thoughtful digital products. I like the complicated bits: finding the real problem, getting a room of people aligned, and making the solution feel simple.</p>
-              <p>My work moves between product strategy, interaction design, and systems thinking. The common thread is curiosity about how people actually live with the things we make.</p>
-              <p className="font-serif text-[20px] italic text-[#275bd7]">Currently in Brooklyn, working everywhere.</p>
+              <p>Creative Production Specialist with a storytelling driven approach to media production, Information Technology, and organizational communication. Contributed to digital engagement through Instagram and TikTok content for BBPBAT (@bbpbat.official), generating over 10,000 views.</p>
+              <p>Skilled in creative production, digital content management, graphic design, publication, and video editing using CapCut and Adobe Premiere Pro. Proficient in OBS Studio for live streaming and Canon/Sony mirrorless cameras, with expertise in photography and event documentation.</p>
+              <p>Combines creative storytelling, technical skills, strategic communication, coordination, and administrative capabilities to support creative projects and operational needs.</p>
             </div>
           </div>
 
