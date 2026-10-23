@@ -184,22 +184,84 @@ function Home() {
             </div>
           </div>
 
-          <section id="experience" aria-labelledby="experience-heading" className="reveal-up scroll-mt-24 space-y-12">
-            <p id="experience-heading" className="font-mono text-[10px] uppercase tracking-[.18em] text-[#77756f]">Experience</p>
-            <div className="border-t border-[#191919]/15">
-              <div className="grid gap-4 border-b border-[#191919]/15 py-7 md:grid-cols-[.6fr_1.5fr_1.1fr] md:gap-8 md:py-9">
-                <span className="font-mono text-[11px] text-[#77756f]">2021 — NOW</span><div><h4 className="text-[19px] font-bold tracking-[-.04em]">Crosby <span className="font-normal text-[#77756f]">/ Senior Product Designer</span></h4><span className="mt-1 block text-[12px] text-[#89877f]">Remote · Retail technology</span></div><p className="text-[14px] leading-relaxed text-[#65635d]">Leading product strategy and design for a modern retail platform, across the counter and beyond.</p>
-              </div>
-              <div className="grid gap-4 border-b border-[#191919]/15 py-7 md:grid-cols-[.6fr_1.5fr_1.1fr] md:gap-8 md:py-9">
-                <span className="font-mono text-[11px] text-[#77756f]">2015 — 2021</span><div><h4 className="text-[19px] font-bold tracking-[-.04em]">Norman &amp; Co <span className="font-normal text-[#77756f]">/ Lead Product Designer</span></h4><span className="mt-1 block text-[12px] text-[#89877f]">Remote · Automotive</span></div><p className="text-[14px] leading-relaxed text-[#65635d]">Led the design of Scout, an in-car experience built around the needs of people on the move.</p>
-              </div>
-              <div className="grid gap-4 border-b border-[#191919]/15 py-7 md:grid-cols-[.6fr_1.5fr_1.1fr] md:gap-8 md:py-9">
-                <span className="font-mono text-[11px] text-[#77756f]">2012 — 2015</span><div><h4 className="text-[19px] font-bold tracking-[-.04em]">Gardona <span className="font-normal text-[#77756f]">/ Product Designer</span></h4><span className="mt-1 block text-[12px] text-[#89877f]">Remote · Urban mobility</span></div><p className="text-[14px] leading-relaxed text-[#65635d]">Helped launch a shared e-scooter service and brought consistency to a growing product family.</p>
-              </div>
-              <div className="grid gap-4 border-b border-[#191919]/15 py-7 md:grid-cols-[.6fr_1.5fr_1.1fr] md:gap-8 md:py-9">
-                <span className="font-mono text-[11px] text-[#77756f]">2009 — 2012</span><div><h4 className="text-[19px] font-bold tracking-[-.04em]">Independent <span className="font-normal text-[#77756f]">/ Product Designer</span></h4><span className="mt-1 block text-[12px] text-[#89877f]">A little bit of everything</span></div><p className="text-[14px] leading-relaxed text-[#65635d]">Partnered with ambitious teams to make digital products feel intuitive, especially in commerce.</p>
-              </div>
-            </div>
+          <section id="experience" aria-labelledby="experience-heading" className="reveal-up scroll-mt-24 space-y-10 md:space-y-12">
+            <h2 id="experience-heading" className="text-[clamp(2.4rem,5vw,3.5rem)] font-medium leading-[.95] tracking-[-.075em]">Experience<span className="text-[#275bd7]">.</span></h2>
+            <ol className="relative ml-1 border-l border-[#191919]/15">
+              <li className="relative pb-12 pl-7 sm:pl-9 md:pb-14">
+                <span aria-hidden="true" className="absolute -left-[6px] top-[5px] h-3 w-3 rounded-full border border-[#191919] bg-[#191919]" />
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-8">
+                  <div className="min-w-0">
+                    <h3 className="text-[18px] font-bold leading-snug tracking-[-.045em] sm:text-[20px]">Photo &amp; Video Editor</h3>
+                    <p className="mt-1 text-[13px] text-[#77756f]">BBPBAT Sukabumi</p>
+                  </div>
+                  <p className="shrink-0 font-mono text-[10px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[11px]">November 2025 – Mei 2026</p>
+                </div>
+                <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[13px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[14px]">
+                  <li>Produced and edited educational content showcasing various cultured freshwater fish species to highlight the institution’s aquaculture programs across social media platforms.</li>
+                  <li>Documented a cross-island fish distribution program and produced short-form videos for Instagram (@bbpbat.official) and TikTok, generating over 10,000 views.</li>
+                  <li>Facilitated transparent external communication regarding aquaculture services and commercial fish distribution, ensuring public information was clear, accessible, and easy to understand for community members and prospective buyers.</li>
+                  <li>Collaborated with internal departments to translate operational governance and public service procedures into clear and effective digital communication strategies, strengthening public awareness, information delivery, and audience engagement.</li>
+                  <li>Managed stakeholder engagement through social media channels, educating the public about aquaculture programs and commercial procedures while maintaining 95% positive public sentiment.</li>
+                  <li>Directed and edited documentation of weekly morning assemblies and institutional activities, ensuring 100% on-time content updates to support public relations and information transparency.</li>
+                </ul>
+              </li>
+              <li className="relative pb-12 pl-7 sm:pl-9 md:pb-14">
+                <span aria-hidden="true" className="absolute -left-[6px] top-[5px] h-3 w-3 rounded-full border border-[#c9c6be] bg-[#f7f5ef]" />
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-8">
+                  <div className="min-w-0">
+                    <h3 className="text-[18px] font-bold leading-snug tracking-[-.045em] sm:text-[20px]">AI Assisted Creative Production</h3>
+                    <p className="mt-1 text-[13px] text-[#77756f]">PT Presentologics</p>
+                  </div>
+                  <p className="shrink-0 font-mono text-[10px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[11px]">Desember 2024 – April 2025</p>
+                </div>
+                <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[13px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[14px]">
+                  <li>Produced and edited video content using AI-powered tools to enhance visual storytelling, streamline editing workflows, and improve overall content quality.</li>
+                  <li>Designed website layouts, landing pages, and user interface concepts using AI-assisted web design tools to transform creative ideas into engaging digital experiences.</li>
+                  <li>Integrated AI tools into video production and web design workflows to support creative ideation, visual development, and efficient content creation.</li>
+                  <li>Refined video assets and website designs to maintain visual consistency, usability, and alignment with project objectives.</li>
+                  <li>Used AI prompting techniques to generate visual assets, explore design variations, and develop creative concepts for video production and website design.</li>
+                </ul>
+              </li>
+              <li className="relative pb-12 pl-7 sm:pl-9 md:pb-14">
+                <span aria-hidden="true" className="absolute -left-[6px] top-[5px] h-3 w-3 rounded-full border border-[#c9c6be] bg-[#f7f5ef]" />
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-8">
+                  <div className="min-w-0">
+                    <h3 className="text-[18px] font-bold leading-snug tracking-[-.045em] sm:text-[20px]">UI/UX Design And Development</h3>
+                    <p className="mt-1 text-[13px] text-[#77756f]">Learning X</p>
+                  </div>
+                  <p className="shrink-0 font-mono text-[10px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[11px]">February 2024 – August 2024</p>
+                </div>
+                <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[13px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[14px]">
+                  <li>Created user interface designs and interactive prototypes using Figma to develop intuitive and user-friendly digital experiences.</li>
+                  <li>Developed wireframes, user flows, and website layouts in Figma to improve navigation, usability, and content organization.</li>
+                  <li>Designed responsive website mockups for desktop and mobile devices, ensuring visual consistency across different screen sizes.</li>
+                  <li>Applied UI/UX design principles, including typography, color theory, spacing, and visual hierarchy, to enhance the overall user experience.</li>
+                  <li>Organized reusable design components and maintained consistent design systems in Figma to support efficient design iterations and collaboration.</li>
+                  <li>Refined page layouts and interactive elements to create a consistent user experience across book discovery, search results, and resource detail pages.</li>
+                  <li>Reviewed design flows and interactive prototypes to identify usability issues and refine user journeys before implementation.</li>
+                  <li>Designed clear interaction states for buttons, search filters, forms, and navigation elements to improve interface clarity and user engagement.</li>
+                </ul>
+              </li>
+              <li className="relative pb-2 pl-7 sm:pl-9">
+                <span aria-hidden="true" className="absolute -left-[6px] top-[5px] h-3 w-3 rounded-full border border-[#c9c6be] bg-[#f7f5ef]" />
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-8">
+                  <div className="min-w-0">
+                    <h3 className="text-[18px] font-bold leading-snug tracking-[-.045em] sm:text-[20px]">Digital Library Experience Design</h3>
+                    <p className="mt-1 text-[13px] text-[#77756f]">PT Global Investment Insititusi</p>
+                  </div>
+                  <p className="shrink-0 font-mono text-[10px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[11px]">February 2023 – February 2024</p>
+                </div>
+                <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[13px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[14px]">
+                  <li>Developed and enhanced web applications using React.js and Tailwind CSS to present and organize digital content while improving overall workflow efficiency.</li>
+                  <li>Designed responsive and user-friendly interfaces to improve data presentation, information accessibility, and navigation across multiple devices.</li>
+                  <li>Structured and organized digital information into well-designed web interfaces to improve content discoverability and provide a seamless user experience.</li>
+                  <li>Leveraged AI-assisted tools to support code writing, debugging, problem-solving, and feature development, while reviewing the results to ensure application quality and functionality.</li>
+                  <li>Conducted website testing and feature refinement to identify bugs, improve usability, and ensure application functionality met project requirements.</li>
+                  <li>Enhanced digital experiences by developing reusable website components, maintaining UI consistency, and implementing effective front-end development practices.</li>
+                  <li>Implemented interactive website features and refined user flows to make digital content easier to explore, access, and navigate across the platform.</li>
+                </ul>
+              </li>
+            </ol>
           </section>
         </section>
       </main>
