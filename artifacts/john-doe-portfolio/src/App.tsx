@@ -191,12 +191,12 @@ function Home() {
                 <span aria-hidden="true" className="absolute -left-[6px] top-[5px] h-3 w-3 rounded-full border border-[#191919] bg-[#191919]" />
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-8">
                   <div className="min-w-0">
-                    <h3 className="text-[18px] font-bold leading-snug tracking-[-.045em] sm:text-[20px]">Photo &amp; Video Editor</h3>
-                    <p className="mt-1 text-[13px] text-[#77756f]">BBPBAT Sukabumi</p>
+                    <h3 className="text-[19px] font-bold leading-snug tracking-[-.045em] sm:text-[21px]">Photo &amp; Video Editor</h3>
+                    <p className="mt-1 text-[14px] text-[#77756f]">BBPBAT Sukabumi</p>
                   </div>
-                  <p className="shrink-0 font-mono text-[10px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[11px]">November 2025 – Mei 2026</p>
+                  <p className="shrink-0 font-mono text-[11px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[12px]">November 2025 – May 2026</p>
                 </div>
-                <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[13px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[14px]">
+                <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[14px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[15px]">
                   <li>Produced and edited educational content showcasing various cultured freshwater fish species to highlight the institution’s aquaculture programs across social media platforms.</li>
                   <li>Documented a cross-island fish distribution program and produced short-form videos for Instagram (@bbpbat.official) and TikTok, generating over 10,000 views.</li>
                   <li>Facilitated transparent external communication regarding aquaculture services and commercial fish distribution, ensuring public information was clear, accessible, and easy to understand for community members and prospective buyers.</li>
@@ -209,12 +209,12 @@ function Home() {
                 <span aria-hidden="true" className="absolute -left-[6px] top-[5px] h-3 w-3 rounded-full border border-[#c9c6be] bg-[#f7f5ef]" />
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-8">
                   <div className="min-w-0">
-                    <h3 className="text-[18px] font-bold leading-snug tracking-[-.045em] sm:text-[20px]">AI Assisted Creative Production</h3>
-                    <p className="mt-1 text-[13px] text-[#77756f]">PT Presentologics</p>
+                    <h3 className="text-[19px] font-bold leading-snug tracking-[-.045em] sm:text-[21px]">AI Assisted Creative Production</h3>
+                    <p className="mt-1 text-[14px] text-[#77756f]">PT Presentologics</p>
                   </div>
-                  <p className="shrink-0 font-mono text-[10px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[11px]">Desember 2024 – April 2025</p>
+                  <p className="shrink-0 font-mono text-[11px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[12px]">December 2024 – April 2025</p>
                 </div>
-                <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[13px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[14px]">
+                <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[14px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[15px]">
                   <li>Produced and edited video content using AI-powered tools to enhance visual storytelling, streamline editing workflows, and improve overall content quality.</li>
                   <li>Designed website layouts, landing pages, and user interface concepts using AI-assisted web design tools to transform creative ideas into engaging digital experiences.</li>
                   <li>Integrated AI tools into video production and web design workflows to support creative ideation, visual development, and efficient content creation.</li>
@@ -226,12 +226,12 @@ function Home() {
                 <span aria-hidden="true" className="absolute -left-[6px] top-[5px] h-3 w-3 rounded-full border border-[#c9c6be] bg-[#f7f5ef]" />
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-8">
                   <div className="min-w-0">
-                    <h3 className="text-[18px] font-bold leading-snug tracking-[-.045em] sm:text-[20px]">UI/UX Design And Development</h3>
-                    <p className="mt-1 text-[13px] text-[#77756f]">Learning X</p>
+                    <h3 className="text-[19px] font-bold leading-snug tracking-[-.045em] sm:text-[21px]">UI/UX Design And Development</h3>
+                    <p className="mt-1 text-[14px] text-[#77756f]">Learning X</p>
                   </div>
-                  <p className="shrink-0 font-mono text-[10px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[11px]">February 2024 – August 2024</p>
+                  <p className="shrink-0 font-mono text-[11px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[12px]">February 2024 – August 2024</p>
                 </div>
-                <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[13px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[14px]">
+                <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[14px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[15px]">
                   <li>Created user interface designs and interactive prototypes using Figma to develop intuitive and user-friendly digital experiences.</li>
                   <li>Developed wireframes, user flows, and website layouts in Figma to improve navigation, usability, and content organization.</li>
                   <li>Designed responsive website mockups for desktop and mobile devices, ensuring visual consistency across different screen sizes.</li>
@@ -246,12 +246,12 @@ function Home() {
                 <span aria-hidden="true" className="absolute -left-[6px] top-[5px] h-3 w-3 rounded-full border border-[#c9c6be] bg-[#f7f5ef]" />
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-8">
                   <div className="min-w-0">
-                    <h3 className="text-[18px] font-bold leading-snug tracking-[-.045em] sm:text-[20px]">Digital Library Experience Design</h3>
-                    <p className="mt-1 text-[13px] text-[#77756f]">PT Global Investment Insititusi</p>
+                    <h3 className="text-[19px] font-bold leading-snug tracking-[-.045em] sm:text-[21px]">Digital Library Experience Design</h3>
+                    <p className="mt-1 text-[14px] text-[#77756f]">PT Global Investment Insititusi</p>
                   </div>
-                  <p className="shrink-0 font-mono text-[10px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[11px]">February 2023 – February 2024</p>
+                  <p className="shrink-0 font-mono text-[11px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[12px]">February 2023 – February 2024</p>
                 </div>
-                <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[13px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[14px]">
+                <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[14px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[15px]">
                   <li>Developed and enhanced web applications using React.js and Tailwind CSS to present and organize digital content while improving overall workflow efficiency.</li>
                   <li>Designed responsive and user-friendly interfaces to improve data presentation, information accessibility, and navigation across multiple devices.</li>
                   <li>Structured and organized digital information into well-designed web interfaces to improve content discoverability and provide a seamless user experience.</li>
