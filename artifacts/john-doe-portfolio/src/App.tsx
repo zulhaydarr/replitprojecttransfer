@@ -163,9 +163,10 @@ function Home() {
             <p className="mb-5 font-mono text-[10px] uppercase tracking-[.18em] text-[#77756f]">A little context</p>
             <h2 className="text-[clamp(4rem,10vw,7.3rem)] font-medium leading-[.87] tracking-[-.085em]">About Me</h2>
           </div>
-          <div className="reveal-up mb-24 max-w-[900px] md:mb-32">
-            <div className="space-y-5 text-justify text-[16px] leading-[1.85] text-[#55534e] sm:text-[18px]">
-              <p>Skilled in creative production, digital content management, graphic design, digital publishing, and video editing with CapCut and Adobe Premiere Pro. I bring a storytelling-driven approach to multimedia production and use OBS Studio for live streaming, along with Canon and Sony mirrorless cameras for photography, videography, and event documentation. Combining creative storytelling and technical expertise with strategic communication, coordination, and administrative skills, I create engaging content, support creative projects, and meet operational needs.</p>
+          <div className="reveal-up mb-24 grid gap-10 md:mb-32 md:grid-cols-[.8fr_1.4fr] md:gap-20">
+            <h3 className="max-w-[400px] text-[27px] font-semibold leading-[1.18] tracking-[-.055em] sm:text-[32px]">Good design makes the hard things feel obvious.</h3>
+            <div className="space-y-5 text-[16px] leading-[1.85] text-[#55534e] sm:text-[18px]">
+              <p>Creative Production Specialist with a storytelling driven approach to media production, Information Technology, and organizational communication. Contributed to digital engagement through Instagram and TikTok content for BBPBAT (@bbpbat.official), generating over 10,000 views. Skilled in creative production, digital content management, graphic design, publication, and video editing using CapCut and Adobe Premiere Pro. Proficient in OBS Studio for live streaming and Canon/Sony mirrorless cameras, with expertise in photography and event documentation. Combines creative storytelling, technical skills, strategic communication, coordination, and administrative capabilities to support creative projects and operational needs. Passionate about turning ideas into engaging visual stories while maintaining quality, consistency, and purpose throughout the creative process.</p>
             </div>
           </div>
 
