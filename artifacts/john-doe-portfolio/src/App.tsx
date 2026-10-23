@@ -1,10 +1,11 @@
-import { type MouseEvent, type ReactNode, useEffect, useState } from 'react';
+import { type MouseEvent, type ReactNode, useEffect } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
-import { ArrowDown, ArrowUpRight, Check, Copy } from 'lucide-react';
+import { ArrowDown, ArrowUpRight } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import heroPortrait from './assets/hero-portrait.webp';
 import {
   Route,
@@ -16,7 +17,6 @@ import {
 const queryClient = new QueryClient();
 
 function Home() {
-  const [copied, setCopied] = useState(false);
   const email = 'john.doe@email.com';
 
   useEffect(() => {
@@ -38,23 +38,6 @@ function Home() {
     return () => observer.disconnect();
   }, []);
 
-  async function copyEmail() {
-    try {
-      await navigator.clipboard.writeText(email);
-    } catch {
-      const field = document.createElement('textarea');
-      field.value = email;
-      field.style.position = 'fixed';
-      field.style.opacity = '0';
-      document.body.appendChild(field);
-      field.select();
-      document.execCommand('copy');
-      field.remove();
-    }
-    setCopied(true);
-    window.setTimeout(() => setCopied(false), 2200);
-  }
-
   function handleAboutNavigation(event: MouseEvent<HTMLAnchorElement>) {
     event.preventDefault();
     const aboutLabel = document.querySelector<HTMLElement>('#about > div:first-child > p');
@@ -74,10 +57,10 @@ function Home() {
         <div className="relative mx-auto max-w-[1240px] px-5 py-3 sm:px-8 md:flex md:min-h-[72px] md:items-center md:justify-between md:py-0">
           <div className="flex items-center justify-between md:w-full">
           <a href="#top" className="relative z-10 shrink-0 whitespace-nowrap text-[clamp(10px,2.9vw,15px)] font-extrabold tracking-[-.06em] sm:text-[15px]" aria-label="Zulhaydar Fathurrahman Sidiq, home" data-testid="link-home">Zulhaydar Fathurrahman Sidiq</a>
-          <button onClick={copyEmail} className="group flex items-center gap-2 rounded-full bg-[#191919] px-4 py-2.5 text-[12px] font-semibold text-white transition-transform hover:scale-[1.03] active:scale-[.97] max-[360px]:px-2 max-[360px]:text-[10px] sm:px-5 sm:text-[13px]" aria-label={copied ? 'Email address copied' : `Copy ${email}`} data-testid="button-copy-email">
-            <span>{copied ? 'Copied to clipboard' : email}</span>
-            {copied ? <Check size={14} aria-hidden="true" /> : <Copy size={13} className="text-white/60" aria-hidden="true" />}
-          </button>
+          <a href="https://wa.link/6dipv7" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 rounded-full bg-[#191919] px-4 py-2.5 text-[12px] font-semibold text-white transition-transform hover:scale-[1.03] active:scale-[.97] sm:px-5 sm:text-[13px]" aria-label="Message me on WhatsApp" data-testid="link-whatsapp-navbar">
+            <FaWhatsapp size={16} aria-hidden="true" />
+            <span>WhatsApp Me</span>
+          </a>
           </div>
           <div className="mt-2 flex items-center justify-center gap-x-5 border-t border-[#191919]/[.07] pt-2 md:absolute md:left-1/2 md:top-1/2 md:mt-0 md:-translate-x-1/2 md:-translate-y-1/2 md:gap-8 md:border-0 md:pt-0">
             <a href="#work" className="text-[13px] font-semibold text-[#64635f] transition-colors hover:text-[#191919]" data-testid="link-work">Work</a>
@@ -269,9 +252,10 @@ function Home() {
         <div className="mx-auto flex max-w-[1240px] flex-col items-center px-5 py-24 text-center sm:px-8 md:py-32">
           <p className="reveal-up mb-6 font-mono text-[10px] uppercase tracking-[.18em] text-[#77756f]">Good work starts with a conversation</p>
           <h2 className="reveal-up max-w-[900px] text-[clamp(3.5rem,9vw,7rem)] font-medium leading-[.9] tracking-[-.08em]">Have a good one<br className="hidden sm:block" /> in mind<span className="text-[#275bd7]">?</span></h2>
-          <button onClick={copyEmail} className="reveal-up reveal-delay-1 mt-10 inline-flex items-center gap-3 rounded-full bg-[#191919] px-7 py-4 text-[14px] font-bold text-white transition-transform hover:scale-[1.04] active:scale-[.97] sm:px-8 sm:py-[18px] sm:text-[16px]" aria-label={copied ? 'Email address copied' : `Copy ${email}`} data-testid="button-copy-email-footer">
-            <span>{copied ? 'Email copied — talk soon' : email}</span>{copied ? <Check size={17} /> : <Copy size={16} className="text-white/60" />}
-          </button>
+          <a href="https://wa.link/6dipv7" target="_blank" rel="noopener noreferrer" className="reveal-up reveal-delay-1 mt-10 inline-flex items-center gap-3 rounded-full bg-[#191919] px-7 py-4 text-[14px] font-bold text-white transition-transform hover:scale-[1.04] active:scale-[.97] sm:px-8 sm:py-[18px] sm:text-[16px]" aria-label="Message me on WhatsApp" data-testid="link-whatsapp-footer">
+            <FaWhatsapp size={18} aria-hidden="true" />
+            <span>WhatsApp Me</span>
+          </a>
           <div className="mt-24 flex w-full flex-col items-center justify-between gap-5 border-t border-[#191919]/10 pt-6 text-[11px] font-semibold text-[#66645e] sm:flex-row">
             <div className="flex gap-6">
               <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="transition-colors hover:text-[#275bd7]" data-testid="link-linkedin">LINKEDIN <ArrowUpRight className="ml-1 inline" size={11} /></a>
@@ -283,7 +267,6 @@ function Home() {
         </div>
       </footer>
       <a href={`mailto:${email}?subject=${encodeURIComponent('Let’s work together')}`} className="fixed bottom-5 right-5 z-40 hidden items-center gap-2 rounded-full bg-[#275bd7] px-5 py-3.5 text-[12px] font-bold text-white shadow-[0_8px_25px_rgba(39,91,215,.22)] transition-transform hover:-translate-y-1 sm:inline-flex sm:bottom-8 sm:right-8" data-testid="link-contact-cta">Let’s talk <ArrowUpRight size={14} /></a>
-      {copied && <div role="status" aria-live="polite" className="copy-toast fixed bottom-[78px] left-1/2 z-[60] -translate-x-1/2 border border-[#191919]/10 bg-[#191919] px-4 py-3 text-[12px] font-semibold text-white shadow-lg sm:bottom-8 sm:left-8 sm:translate-x-0">Email address copied to clipboard</div>}
     </div>
   );
 }
