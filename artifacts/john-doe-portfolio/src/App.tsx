@@ -1,4 +1,4 @@
-import { type ReactNode, useEffect, useState } from 'react';
+import { type MouseEvent, type ReactNode, useEffect, useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
@@ -55,6 +55,19 @@ function Home() {
     window.setTimeout(() => setCopied(false), 2200);
   }
 
+  function handleAboutNavigation(event: MouseEvent<HTMLAnchorElement>) {
+    event.preventDefault();
+    const heading = document.querySelector<HTMLElement>('#about h2');
+    if (!heading) return;
+
+    const navbar = document.querySelector<HTMLElement>('nav[aria-label="Main navigation"]');
+    const offset = (navbar?.getBoundingClientRect().height ?? 0) + 16;
+    const top = heading.getBoundingClientRect().top + window.scrollY - offset;
+    const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+
+    window.scrollTo({ top, behavior });
+  }
+
   return (
     <div id="top" className="min-h-[100dvh] bg-[#f7f5ef] text-[#191919]">
       <nav aria-label="Main navigation" className="fixed inset-x-0 top-0 z-50 border-b border-[#191919]/[.07] bg-[#f7f5ef]/90 backdrop-blur-xl">
@@ -68,7 +81,7 @@ function Home() {
           </div>
           <div className="mt-2 flex items-center justify-center gap-x-5 border-t border-[#191919]/[.07] pt-2 md:absolute md:left-1/2 md:top-1/2 md:mt-0 md:-translate-x-1/2 md:-translate-y-1/2 md:gap-8 md:border-0 md:pt-0">
             <a href="#work" className="text-[13px] font-semibold text-[#64635f] transition-colors hover:text-[#191919]" data-testid="link-work">Work</a>
-            <a href="#about" className="text-[13px] font-semibold text-[#64635f] transition-colors hover:text-[#191919]" data-testid="link-about">About</a>
+            <a href="#about" onClick={handleAboutNavigation} className="text-[13px] font-semibold text-[#64635f] transition-colors hover:text-[#191919]" data-testid="link-about">About</a>
             <a href="#experience" className="text-[13px] font-semibold text-[#64635f] transition-colors hover:text-[#191919]" data-testid="link-experience">Experience</a>
             <a href="#contact" className="text-[13px] font-semibold text-[#64635f] transition-colors hover:text-[#191919]" data-testid="link-contact">Contact</a>
           </div>
