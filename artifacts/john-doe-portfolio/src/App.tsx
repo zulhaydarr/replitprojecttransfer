@@ -57,12 +57,12 @@ function Home() {
 
   function handleAboutNavigation(event: MouseEvent<HTMLAnchorElement>) {
     event.preventDefault();
-    const heading = document.querySelector<HTMLElement>('#about h2');
-    if (!heading) return;
+    const aboutLabel = document.querySelector<HTMLElement>('#about > div:first-child > p');
+    if (!aboutLabel) return;
 
     const navbar = document.querySelector<HTMLElement>('nav[aria-label="Main navigation"]');
     const offset = (navbar?.getBoundingClientRect().height ?? 0) + 16;
-    const top = heading.getBoundingClientRect().top + window.scrollY - offset;
+    const top = aboutLabel.getBoundingClientRect().top + window.scrollY - offset;
     const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
 
     window.scrollTo({ top, behavior });
