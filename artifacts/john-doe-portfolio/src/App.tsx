@@ -87,7 +87,7 @@ function Home() {
             <h1 className="max-w-[760px] text-[clamp(2.8rem,6.4vw,5.6rem)] font-medium leading-[.96] tracking-[-.075em]">Hi! I’m Zulhaydar Fathurrahman Sidiq<span className="text-[#275bd7]">.</span></h1>
             <div className="space-y-3 text-[18px] font-semibold leading-[1.55] tracking-[-.035em] sm:text-[21px] md:text-[23px]">
               <p>Bridging the gap between a great idea and a stunning final cut.</p>
-              <p className="text-[15px] font-medium leading-relaxed tracking-[-.02em] text-[#77756f] sm:text-[17px]">Specializing in end-to-end multimedia production. I manage everything from pre-production planning to on-set execution and post-production editing, ensuring every piece of content hits the right audience.</p>
+              <p className="text-[15px] font-medium leading-relaxed tracking-[-.02em] text-[#77756f] sm:text-[17px]">Specializing in end-to-end multimedia production. Managing every stage of the creative process, from initial planning and on location execution to final editing. My goal is to transform ideas into compelling visual stories that capture attention and connect with the right audience.</p>
             </div>
             <div className="mt-1 flex flex-wrap items-center gap-3">
               <a href="#contact" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#275bd7] px-6 py-3 text-[13px] font-bold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#275bd7] focus-visible:ring-offset-2" data-testid="link-contact-me">Contact Me <ArrowUpRight size={15} aria-hidden="true" /></a>
