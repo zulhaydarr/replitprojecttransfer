@@ -17,8 +17,6 @@ import {
 const queryClient = new QueryClient();
 
 function Home() {
-  const email = 'john.doe@email.com';
-
   useEffect(() => {
     const elements = document.querySelectorAll<HTMLElement>('.reveal-up');
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -244,16 +242,11 @@ function Home() {
             <FaWhatsapp size={18} aria-hidden="true" />
             <span>WhatsApp Me</span>
           </a>
-          <div className="mt-24 flex w-full flex-col items-center justify-between gap-5 border-t border-[#191919]/10 pt-6 text-[11px] font-semibold text-[#66645e] sm:flex-row">
-            <div className="flex gap-6">
-              <a href="https://www.linkedin.com/in/zulhaydar" target="_blank" rel="noreferrer" className="transition-colors hover:text-[#275bd7]" data-testid="link-linkedin">LINKEDIN <ArrowUpRight className="ml-1 inline" size={11} /></a>
-              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="transition-colors hover:text-[#275bd7]" data-testid="link-instagram">INSTAGRAM <ArrowUpRight className="ml-1 inline" size={11} /></a>
-              <a href="https://dribbble.com/" target="_blank" rel="noreferrer" className="transition-colors hover:text-[#275bd7]" data-testid="link-dribbble">DRIBBBLE <ArrowUpRight className="ml-1 inline" size={11} /></a>
-            </div>
+          <div className="mt-24 flex w-full justify-center border-t border-[#191919]/10 pt-6 text-[11px] font-semibold text-[#66645e]">
+            <a href="https://www.linkedin.com/in/zulhaydar" target="_blank" rel="noreferrer" className="transition-colors hover:text-[#275bd7]" data-testid="link-linkedin">LINKEDIN <ArrowUpRight className="ml-1 inline" size={11} /></a>
           </div>
         </div>
       </footer>
-      <a href={`mailto:${email}?subject=${encodeURIComponent('Let’s work together')}`} className="fixed bottom-5 right-5 z-40 hidden items-center gap-2 rounded-full bg-[#275bd7] px-5 py-3.5 text-[12px] font-bold text-white shadow-[0_8px_25px_rgba(39,91,215,.22)] transition-transform hover:-translate-y-1 sm:inline-flex sm:bottom-8 sm:right-8" data-testid="link-contact-cta">Let’s talk <ArrowUpRight size={14} /></a>
     </div>
   );
 }
