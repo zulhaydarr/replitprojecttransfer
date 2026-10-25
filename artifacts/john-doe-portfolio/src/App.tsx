@@ -6,7 +6,7 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
 import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
-import heroPortrait from './assets/hero-portrait.webp';
+import heroPortrait from './assets/zulhaydar-hero.jpeg';
 import {
   Route,
   Switch,
@@ -74,7 +74,7 @@ function Home() {
         <section className="mx-auto flex max-w-[1240px] flex-col items-start gap-10 px-5 pb-20 pt-32 sm:px-8 md:flex-row md:items-center md:gap-20 md:pb-28 md:pt-44">
           <div className="reveal-up mx-auto aspect-square w-[min(68vw,340px)] shrink-0 md:ml-7 md:mr-0 md:w-[350px]">
             <div className="h-full w-full rotate-[-6deg] overflow-hidden bg-[#dedbd1] shadow-[0_24px_60px_rgba(37,36,32,.17)] transition-transform duration-700 hover:rotate-0">
-              <img src={heroPortrait} alt="Portrait of Zulhaydar Fathurrahman Sidiq" className="h-full w-full object-cover object-[center_25%]" />
+              <img src={heroPortrait} alt="Portrait of Zulhaydar Fathurrahman Sidiq" className="h-full w-full object-cover object-[center_70%]" />
             </div>
           </div>
           <div className="reveal-up reveal-delay-1 flex max-w-[700px] flex-col gap-7">
@@ -91,20 +91,6 @@ function Home() {
           </div>
         </section>
 
-        <div className="reveal-up reveal-delay-2 mx-auto mb-24 max-w-[1320px] px-3 sm:px-6 md:mb-32">
-          <div className="relative aspect-[16/10] overflow-hidden bg-[#e9e6de] sm:aspect-[16/8.5] md:h-[min(66vw,780px)] md:aspect-auto">
-            <iframe
-              src="https://www.youtube.com/embed/9p0lDGh9JXA?si=UlEXIDn4FlcTikpy"
-              title="YouTube video player"
-              className="h-full w-full border-0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            />
-            <div className="absolute bottom-4 left-4 flex items-center gap-2 bg-[#f7f5ef]/90 px-3 py-2 font-mono text-[9px] uppercase tracking-[.12em] text-[#5d5b55] backdrop-blur sm:bottom-7 sm:left-7 sm:text-[10px]"><span className="h-1.5 w-1.5 rounded-full bg-[#275bd7]" /> A little of what I do</div>
-          </div>
-        </div>
-
         <section id="work" className="mx-auto max-w-[1400px] scroll-mt-24 px-5 pb-28 sm:px-8 md:pb-40">
           <div className="reveal-up mb-16 flex flex-col items-center gap-5 text-center md:mb-24">
             <p className="font-mono text-[10px] uppercase tracking-[.18em] text-[#77756f]">A few things I’ve helped bring to life</p>
@@ -112,45 +98,47 @@ function Home() {
             <p className="mt-2 text-[10px] font-medium uppercase tracking-[.14em] text-[#99968e]">Scroll to explore</p>
           </div>
 
-          <article className="project-card group reveal-up relative mb-20 sm:mb-28">
-            <a href={`mailto:${email}?subject=${encodeURIComponent('Tell me about Encore')}`} className="block" aria-label="Ask John about the Encore retail platform" data-testid="link-project-encore">
-              <div className="relative aspect-[16/10] overflow-hidden bg-[#ddd8ce] sm:aspect-[16/8.5]">
-                <img src="https://framerusercontent.com/images/R1r7VFivZ1p7eirOLoMdE5NV80M.jpg" alt="Encore — retail point-of-sale experience" className="project-image h-full w-full object-cover" loading="lazy" />
-                <div className="project-overlay absolute inset-0 bg-[#101014]/40 opacity-0 backdrop-blur-[2px]" />
-                <span className="view-case-study absolute left-1/2 top-1/2 inline-flex -translate-x-1/2 -translate-y-1/2 scale-95 items-center gap-2 whitespace-nowrap bg-[#f7f5ef] px-5 py-3 text-[12px] font-bold opacity-0 sm:px-6">Ask me about this project <ArrowUpRight size={14} /></span>
-              </div>
-              <div className="project-info mt-5 flex flex-col gap-2 transition-opacity sm:flex-row sm:items-end sm:justify-between sm:gap-8">
-                <div><h3 className="text-[24px] font-bold tracking-[-.055em] sm:text-[29px]">Encore</h3><p className="mt-1 font-mono text-[9px] uppercase tracking-[.13em] text-[#8a8881]">Retail · Strategy · 2023—Now</p></div>
-                <p className="max-w-[460px] text-[14px] leading-relaxed text-[#77756f] sm:text-right sm:text-[16px]">A calmer, smarter point-of-sale experience that gives retail teams room to focus on people.</p>
-              </div>
-            </a>
-          </article>
-          <article className="project-card group reveal-up relative mb-20 sm:mb-28">
-            <a href={`mailto:${email}?subject=${encodeURIComponent('Tell me about Scout')}`} className="block" aria-label="Ask John about the Scout in-car experience" data-testid="link-project-scout">
-              <div className="relative aspect-[16/10] overflow-hidden bg-[#ddd8ce] sm:aspect-[4/3]">
-                <img src="https://framerusercontent.com/images/conknpf49hPAVpbVfu0eEPiE4SM.jpeg" alt="Scout — an intuitive in-car companion" className="project-image h-full w-full object-cover" loading="lazy" />
-                <div className="project-overlay absolute inset-0 bg-[#101014]/40 opacity-0 backdrop-blur-[2px]" />
-                <span className="view-case-study absolute left-1/2 top-1/2 inline-flex -translate-x-1/2 -translate-y-1/2 scale-95 items-center gap-2 whitespace-nowrap bg-[#f7f5ef] px-5 py-3 text-[12px] font-bold opacity-0 sm:px-6">Ask me about this project <ArrowUpRight size={14} /></span>
-              </div>
-              <div className="project-info mt-5 flex flex-col gap-2 transition-opacity sm:flex-row sm:items-end sm:justify-between sm:gap-8">
-                <div><h3 className="text-[24px] font-bold tracking-[-.055em] sm:text-[29px]">Scout</h3><p className="mt-1 font-mono text-[9px] uppercase tracking-[.13em] text-[#8a8881]">Automotive · Product design · 2019—21</p></div>
-                <p className="max-w-[460px] text-[14px] leading-relaxed text-[#77756f] sm:text-right sm:text-[16px]">A thoughtful in-car companion, designed to make the moments between destinations feel effortless.</p>
-              </div>
-            </a>
-          </article>
-          <article className="project-card group reveal-up relative">
-            <a href={`mailto:${email}?subject=${encodeURIComponent('Tell me about Gardona')}`} className="block" aria-label="Ask John about Gardona's shared mobility app" data-testid="link-project-gardona">
-              <div className="relative aspect-[16/10] overflow-hidden bg-[#ddd8ce] sm:aspect-[16/8.5]">
-                <img src="https://framerusercontent.com/images/h25SyziLUKTHENOdmXtNMuyOHdM.jpg" alt="Gardona — a shared electric scooter experience" className="project-image h-full w-full object-cover" loading="lazy" />
-                <div className="project-overlay absolute inset-0 bg-[#101014]/40 opacity-0 backdrop-blur-[2px]" />
-                <span className="view-case-study absolute left-1/2 top-1/2 inline-flex -translate-x-1/2 -translate-y-1/2 scale-95 items-center gap-2 whitespace-nowrap bg-[#f7f5ef] px-5 py-3 text-[12px] font-bold opacity-0 sm:px-6">Ask me about this project <ArrowUpRight size={14} /></span>
-              </div>
-              <div className="project-info mt-5 flex flex-col gap-2 transition-opacity sm:flex-row sm:items-end sm:justify-between sm:gap-8">
-                <div><h3 className="text-[24px] font-bold tracking-[-.055em] sm:text-[29px]">Gardona</h3><p className="mt-1 font-mono text-[9px] uppercase tracking-[.13em] text-[#8a8881]">Mobility · Systems · 2012—15</p></div>
-                <p className="max-w-[460px] text-[14px] leading-relaxed text-[#77756f] sm:text-right sm:text-[16px]">From a first ride to a city-wide design system, making shared electric mobility feel natural.</p>
-              </div>
-            </a>
-          </article>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 md:gap-8">
+            <div className="reveal-up aspect-video overflow-hidden bg-[#ddd8ce]">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/PXa_lSYQnwk?si=odDy6LC_DYXzh649"
+                title="YouTube video player"
+                className="h-full w-full border-0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
+            <div className="reveal-up aspect-video overflow-hidden bg-[#ddd8ce]">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/_xv8NUdUGS4?si=NLnlLp7KWrcrMzt0"
+                title="YouTube video player"
+                className="h-full w-full border-0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
+            <div className="reveal-up aspect-video overflow-hidden bg-[#ddd8ce]">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/tAHINx4N1ic?si=RdeTcGF20k8RQYbW"
+                title="YouTube video player"
+                className="h-full w-full border-0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
+          </div>
         </section>
 
         <section id="about" className="mx-auto max-w-[1240px] scroll-mt-24 px-5 py-24 sm:px-8 md:py-32">
@@ -175,7 +163,7 @@ function Home() {
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-8">
                   <div className="min-w-0">
                     <h3 className="text-[19px] font-bold leading-snug tracking-[-.045em] sm:text-[21px]">Photo &amp; Video Editor</h3>
-                    <p className="mt-1 text-[14px] text-[#77756f]">BBPBAT Sukabumi</p>
+                    <p className="mt-1 text-[14px] text-[#77756f]">Balai Besar Perikanan Budidaya Air Tawar Sukabumi</p>
                   </div>
                   <p className="shrink-0 font-mono text-[12px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[13px]">November 2025 – May 2026</p>
                 </div>
@@ -232,7 +220,7 @@ function Home() {
                     <h3 className="text-[19px] font-bold leading-snug tracking-[-.045em] sm:text-[21px]">Digital Library Experience Design</h3>
                     <p className="mt-1 text-[14px] text-[#77756f]">PT Global Investment Insititusi</p>
                   </div>
-                  <p className="shrink-0 font-mono text-[12px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[13px]">February 2023 – February 2024</p>
+                  <p className="shrink-0 font-mono text-[12px] leading-relaxed text-[#89877f] sm:pt-1 sm:text-right sm:text-[13px]">August 2023 – December 2023</p>
                 </div>
                 <ul className="mt-5 max-w-[850px] list-disc space-y-2 pl-4 text-[14px] leading-[1.75] text-[#65635d] marker:text-[#c8c5bc] sm:text-[15px]">
                   <li>Developed and enhanced web applications using React.js and Tailwind CSS to present and organize digital content while improving overall workflow efficiency.</li>
@@ -258,11 +246,10 @@ function Home() {
           </a>
           <div className="mt-24 flex w-full flex-col items-center justify-between gap-5 border-t border-[#191919]/10 pt-6 text-[11px] font-semibold text-[#66645e] sm:flex-row">
             <div className="flex gap-6">
-              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="transition-colors hover:text-[#275bd7]" data-testid="link-linkedin">LINKEDIN <ArrowUpRight className="ml-1 inline" size={11} /></a>
+              <a href="https://www.linkedin.com/in/zulhaydar" target="_blank" rel="noreferrer" className="transition-colors hover:text-[#275bd7]" data-testid="link-linkedin">LINKEDIN <ArrowUpRight className="ml-1 inline" size={11} /></a>
               <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="transition-colors hover:text-[#275bd7]" data-testid="link-instagram">INSTAGRAM <ArrowUpRight className="ml-1 inline" size={11} /></a>
               <a href="https://dribbble.com/" target="_blank" rel="noreferrer" className="transition-colors hover:text-[#275bd7]" data-testid="link-dribbble">DRIBBBLE <ArrowUpRight className="ml-1 inline" size={11} /></a>
             </div>
-            <span className="font-mono text-[10px] font-normal tracking-[.05em]">JOHN DOE · INDEPENDENT BY DESIGN · © 2025</span>
           </div>
         </div>
       </footer>
